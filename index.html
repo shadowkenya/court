@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Court Filing System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    header {
+      background-color: #1d3557;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #457b9d;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: calc(100vh - 140px); /* full screen minus header + nav */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6); /* darken the image */
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #1d3557;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Digital Court Filing System</h1>
+  <p>Efficient | Transparent | Secure</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="login.html">User Login</a>
+  <a href="admin/login.html">Admin Login</a>
+
+</nav>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h1>Welcome to the Digital Justice Hub</h1>
+    <p>
+      Seamlessly file and manage court cases online. This system enables secure, fast, and efficient case processing for both legal professionals and court administrators.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Digital Court Filing System | Judiciary ICT Department</p>
+</footer>
+
+</body>
+</html>
